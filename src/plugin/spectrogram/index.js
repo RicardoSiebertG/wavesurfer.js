@@ -357,6 +357,7 @@ export default class SpectrogramPlugin {
             frequencies.push(channelFreq);
             // frequencies: [channel, sample, freq]
         }
+        this.frequencies = frequencies;
         callback(frequencies, this);
     }
 
